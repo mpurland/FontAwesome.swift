@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2486011DB7E9F0006851F8 /* FontAwesome_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2485F81DB7E9EF006851F8 /* FontAwesome_macOS.framework */; };
+		5A2486061DB7E9F0006851F8 /* FontAwesome_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2486051DB7E9F0006851F8 /* FontAwesome_macOSTests.swift */; };
+		5A2486081DB7E9F0006851F8 /* FontAwesome-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2485FA1DB7E9F0006851F8 /* FontAwesome-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A24863E1DB7EE98006851F8 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841575D91B3A490A001092B6 /* Enum.swift */; };
+		5A2486411DB7F0F5006851F8 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8F01B39610F00269D14 /* FontAwesome.swift */; };
+		5A2486441DB809F7006851F8 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8401A8F21B3961B800269D14 /* FontAwesome.otf */; };
 		8401A8D81B39601400269D14 /* FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401A8D71B39601400269D14 /* FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8401A8DE1B39601400269D14 /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8401A8D21B39601400269D14 /* FontAwesome.framework */; };
 		8401A8E51B39601400269D14 /* FontAwesomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8E41B39601400269D14 /* FontAwesomeTests.swift */; };
@@ -18,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5A2486021DB7E9F0006851F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8401A8C91B39601400269D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A2485F71DB7E9EF006851F8;
+			remoteInfo = "FontAwesome-macOS";
+		};
 		8401A8DF1B39601400269D14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8401A8C91B39601400269D14 /* Project object */;
@@ -28,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2485F81DB7E9EF006851F8 /* FontAwesome_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2485FA1DB7E9F0006851F8 /* FontAwesome-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontAwesome-macOS.h"; sourceTree = "<group>"; };
+		5A2485FB1DB7E9F0006851F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2486001DB7E9F0006851F8 /* FontAwesome-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FontAwesome-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2486051DB7E9F0006851F8 /* FontAwesome_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesome_macOSTests.swift; sourceTree = "<group>"; };
+		5A2486071DB7E9F0006851F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8401A8D21B39601400269D14 /* FontAwesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8401A8D61B39601400269D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8401A8D71B39601400269D14 /* FontAwesome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome.h; sourceTree = "<group>"; };
@@ -36,12 +55,27 @@
 		8401A8E41B39601400269D14 /* FontAwesomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeTests.swift; sourceTree = "<group>"; };
 		8401A8F01B39610F00269D14 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		8401A8F21B3961B800269D14 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		841575D91B3A490A001092B6 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		841575D91B3A490A001092B6 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
 		848937F91C6AF0660085F6D1 /* FontAwesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A2485F41DB7E9EF006851F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2485FD1DB7E9F0006851F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2486011DB7E9F0006851F8 /* FontAwesome_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8401A8CE1B39601400269D14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,11 +101,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A2485F91DB7E9F0006851F8 /* FontAwesome-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A2485FA1DB7E9F0006851F8 /* FontAwesome-macOS.h */,
+				5A2485FB1DB7E9F0006851F8 /* Info.plist */,
+			);
+			path = "FontAwesome-macOS";
+			sourceTree = "<group>";
+		};
+		5A2486041DB7E9F0006851F8 /* FontAwesome-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A2486051DB7E9F0006851F8 /* FontAwesome_macOSTests.swift */,
+				5A2486071DB7E9F0006851F8 /* Info.plist */,
+			);
+			path = "FontAwesome-macOSTests";
+			sourceTree = "<group>";
+		};
 		8401A8C81B39601400269D14 = {
 			isa = PBXGroup;
 			children = (
+				841575D91B3A490A001092B6 /* Enum.swift */,
 				8401A8D41B39601400269D14 /* FontAwesome */,
 				8401A8E11B39601400269D14 /* FontAwesomeTests */,
+				5A2485F91DB7E9F0006851F8 /* FontAwesome-macOS */,
+				5A2486041DB7E9F0006851F8 /* FontAwesome-macOSTests */,
 				8401A8D31B39601400269D14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +137,8 @@
 				8401A8D21B39601400269D14 /* FontAwesome.framework */,
 				8401A8DD1B39601400269D14 /* FontAwesomeTests.xctest */,
 				848937F91C6AF0660085F6D1 /* FontAwesome.framework */,
+				5A2485F81DB7E9EF006851F8 /* FontAwesome_macOS.framework */,
+				5A2486001DB7E9F0006851F8 /* FontAwesome-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +149,6 @@
 				8401A8D71B39601400269D14 /* FontAwesome.h */,
 				8401A8F01B39610F00269D14 /* FontAwesome.swift */,
 				84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */,
-				841575D91B3A490A001092B6 /* Enum.swift */,
 				8401A8F21B3961B800269D14 /* FontAwesome.otf */,
 				8401A8D51B39601400269D14 /* Supporting Files */,
 			);
@@ -127,6 +183,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5A2485F51DB7E9EF006851F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2486081DB7E9F0006851F8 /* FontAwesome-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8401A8CF1B39601400269D14 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +210,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5A2485F71DB7E9EF006851F8 /* FontAwesome_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A24860D1DB7E9F0006851F8 /* Build configuration list for PBXNativeTarget "FontAwesome_macOS" */;
+			buildPhases = (
+				5A2485F31DB7E9EF006851F8 /* Sources */,
+				5A2485F41DB7E9EF006851F8 /* Frameworks */,
+				5A2485F51DB7E9EF006851F8 /* Headers */,
+				5A2485F61DB7E9EF006851F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontAwesome_macOS;
+			productName = "FontAwesome-macOS";
+			productReference = 5A2485F81DB7E9EF006851F8 /* FontAwesome_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A2485FF1DB7E9F0006851F8 /* FontAwesome-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A24860E1DB7E9F0006851F8 /* Build configuration list for PBXNativeTarget "FontAwesome-macOSTests" */;
+			buildPhases = (
+				5A2485FC1DB7E9F0006851F8 /* Sources */,
+				5A2485FD1DB7E9F0006851F8 /* Frameworks */,
+				5A2485FE1DB7E9F0006851F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A2486031DB7E9F0006851F8 /* PBXTargetDependency */,
+			);
+			name = "FontAwesome-macOSTests";
+			productName = "FontAwesome-macOSTests";
+			productReference = 5A2486001DB7E9F0006851F8 /* FontAwesome-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8401A8D11B39601400269D14 /* FontAwesome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8401A8E81B39601400269D14 /* Build configuration list for PBXNativeTarget "FontAwesome" */;
@@ -206,9 +306,17 @@
 		8401A8C91B39601400269D14 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
+					5A2485F71DB7E9EF006851F8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					5A2485FF1DB7E9F0006851F8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					8401A8D11B39601400269D14 = {
 						CreatedOnToolsVersion = 6.3.2;
 						LastSwiftMigration = 0800;
@@ -238,11 +346,28 @@
 				8401A8D11B39601400269D14 /* FontAwesome */,
 				8401A8DC1B39601400269D14 /* FontAwesomeTests */,
 				848937F81C6AF0660085F6D1 /* FontAwesome-watchOS */,
+				5A2485F71DB7E9EF006851F8 /* FontAwesome_macOS */,
+				5A2485FF1DB7E9F0006851F8 /* FontAwesome-macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A2485F61DB7E9EF006851F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2486441DB809F7006851F8 /* FontAwesome.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2485FE1DB7E9F0006851F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8401A8D01B39601400269D14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +393,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A2485F31DB7E9EF006851F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2486411DB7F0F5006851F8 /* FontAwesome.swift in Sources */,
+				5A24863E1DB7EE98006851F8 /* Enum.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2485FC1DB7E9F0006851F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2486061DB7E9F0006851F8 /* FontAwesome_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8401A8CD1B39601400269D14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +438,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5A2486031DB7E9F0006851F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A2485F71DB7E9EF006851F8 /* FontAwesome_macOS */;
+			targetProxy = 5A2486021DB7E9F0006851F8 /* PBXContainerItemProxy */;
+		};
 		8401A8E01B39601400269D14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8401A8D11B39601400269D14 /* FontAwesome */;
@@ -304,6 +451,100 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5A2486091DB7E9F0006851F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "FontAwesome-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.zoutapps.FontAwesome-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A24860A1DB7E9F0006851F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "FontAwesome-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.zoutapps.FontAwesome-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A24860B1DB7E9F0006851F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "FontAwesome-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.zoutapps.FontAwesome-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A24860C1DB7E9F0006851F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FontAwesome-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.zoutapps.FontAwesome-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		8401A8E61B39601400269D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -521,6 +762,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A24860D1DB7E9F0006851F8 /* Build configuration list for PBXNativeTarget "FontAwesome_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2486091DB7E9F0006851F8 /* Debug */,
+				5A24860A1DB7E9F0006851F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A24860E1DB7E9F0006851F8 /* Build configuration list for PBXNativeTarget "FontAwesome-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A24860B1DB7E9F0006851F8 /* Debug */,
+				5A24860C1DB7E9F0006851F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8401A8CC1B39601400269D14 /* Build configuration list for PBXProject "FontAwesome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
