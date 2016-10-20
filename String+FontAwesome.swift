@@ -1,0 +1,64 @@
+//
+//  String+FontAwesome.swift
+//  FontAwesome
+//
+// Copyright (c) 2014-present FontAwesome.swift contributors
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+
+import Foundation
+
+/// A FontAwesome extension to String.
+public extension String {
+    
+    /// Get a FontAwesome icon string with the given icon name.
+    ///
+    /// - parameter name: The preferred icon name.
+    /// - returns: A string that will appear as icon with FontAwesome.
+    public static func fontAwesomeIconWithName(_ name: FontAwesome) -> String {
+        return name.rawValue.substring(to: name.rawValue.characters.index(name.rawValue.startIndex, offsetBy: 1))
+    }
+    
+    /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: A string that will appear as icon with FontAwesome.
+    public static func fontAwesomeIconWithCode(_ code: String) -> String? {
+        
+        guard let name = self.fontAwesomeFromCode(code) else {
+            return nil
+        }
+        
+        return self.fontAwesomeIconWithName(name)
+    }
+    
+    /// Get a FontAwesome icon with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: An internal corresponding FontAwesome code.
+    public static func fontAwesomeFromCode(_ code: String) -> FontAwesome? {
+        
+        guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
+            return nil
+        }
+        
+        return icon
+    }
+}

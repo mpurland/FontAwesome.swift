@@ -1,6 +1,6 @@
 //
-//  FontAwesome-macOS.h
-//  FontAwesome-macOS
+//  UIFont+FontAwesome.swift
+//  FontAwesome
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -23,14 +23,20 @@
 // THE SOFTWARE.
 
 
-#import <Cocoa/Cocoa.h>
+import UIKit
 
-//! Project version number for FontAwesome-macOS.
-FOUNDATION_EXPORT double FontAwesome_macOSVersionNumber;
-
-//! Project version string for FontAwesome-macOS.
-FOUNDATION_EXPORT const unsigned char FontAwesome_macOSVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <FontAwesome_macOS/PublicHeader.h>
-
-
+public extension UIFont {
+    
+    /// Get a Font object of FontAwesome.
+    ///
+    /// - parameter fontSize: The preferred font size.
+    /// - returns: A UIFont object of FontAwesome.
+    public class func fontAwesomeOfSize(_ fontSize: CGFloat) -> UIFont {
+        let name = "FontAwesome"
+        if UIFont.fontNames(forFamilyName: name).isEmpty {
+            FontLoader.loadFont(name)
+        }
+        
+        return UIFont(name: name, size: fontSize)!
+    }
+}

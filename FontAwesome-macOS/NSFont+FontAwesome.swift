@@ -1,6 +1,6 @@
 //
-//  FontAwesome-macOS.h
-//  FontAwesome-macOS
+//  NSFont+FontAwesome.swift
+//  FontAwesome
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -22,15 +22,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+import AppKit
 
-#import <Cocoa/Cocoa.h>
-
-//! Project version number for FontAwesome-macOS.
-FOUNDATION_EXPORT double FontAwesome_macOSVersionNumber;
-
-//! Project version string for FontAwesome-macOS.
-FOUNDATION_EXPORT const unsigned char FontAwesome_macOSVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <FontAwesome_macOS/PublicHeader.h>
-
-
+public extension NSFont {
+    
+    @objc public class func fontAwesomeOfSize(_ fontSize: CGFloat) -> NSFont {
+        let name = "FontAwesome"
+        //            if NSFontManager.shared().availableMembers(ofFontFamily: name) == nil {
+        FontLoader.loadFont(name)
+        //            }
+        return NSFont(name: name, size: fontSize)!
+    }
+}
