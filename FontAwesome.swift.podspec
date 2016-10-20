@@ -9,9 +9,14 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
+  s.osx.deployment_target = '10.11'
   s.requires_arc = true
 
   s.source_files = 'FontAwesome/*.{swift}'
+  s.ios.source_files = 'FontAwesome-iOS/*.{swift}'
+  s.osx.source_files = 'FontAwesome-macOS/*.{swift}'
   s.resource_bundle = { 'FontAwesome.swift' => 'FontAwesome/*.otf' }
-  s.frameworks = 'UIKit', 'CoreText'
+  s.frameworks = 'CoreText'
+  s.ios.frameworks = 'UIKit'
+  s.osx.frameworks = 'AppKit'
 end
