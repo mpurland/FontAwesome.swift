@@ -22,7 +22,7 @@ class MacViewController: NSViewController {
         super.viewDidLoad()
         
         // FontAwesome icon in label/textfield
-        label.font = NSFont.fontAwesomeOfSize(100)
+        label.font = NSFont.fontAwesomeOfSize(50)
         label.stringValue = String.fontAwesomeIconWithName(.Github)
         
         // FontAwesome icon in button
@@ -30,7 +30,7 @@ class MacViewController: NSViewController {
         imageButton.title = String.fontAwesomeIconWithName(.Github)
 
         // FontAwesome icon as image
-        imageView.image = NSImage.fontAwesomeIconWithName(.Github, textColor: .black, size: CGSize(width: 1000, height: 1000))
+        imageView.image = NSImage.fontAwesomeIconWithName(.Github, textColor: .black, size: CGSize(width: 500, height: 500))
         
         // FontAwesome icon as image with background color
         coloredImageView.image = NSImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: .blue, size: CGSize(width: 4000, height: 4000), backgroundColor: .red)
