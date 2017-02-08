@@ -30,6 +30,8 @@ class FontAwesome_macOSTests: XCTestCase {
     func testIconFontShouldBeRegisted() {
         let label = NSTextField()
         label.font = NSFont.fontAwesomeOfSize(200)
+        
+        XCTAssertNotNil(label.font)
         XCTAssertNotNil(label.font, "Icon font should not be nil.")
     }
     
@@ -37,6 +39,8 @@ class FontAwesome_macOSTests: XCTestCase {
         let label = NSTextField()
         label.font = NSFont.fontAwesomeOfSize(200)
         label.stringValue = String.fontAwesomeIconWithName(FontAwesome.Github)
+        
+        XCTAssertNotNil(label.font)
         XCTAssertEqual(label.stringValue, "\u{f09b}")
     }
     
@@ -44,6 +48,8 @@ class FontAwesome_macOSTests: XCTestCase {
         let label = NSTextField()
         label.font = NSFont.fontAwesomeOfSize(200)
         label.stringValue = String.fontAwesomeIconWithCode("fa-github") ?? ""
+        
+        XCTAssertNotNil(label.font)
         XCTAssertEqual(label.stringValue, "\u{f09b}")
     }
     
@@ -51,6 +57,18 @@ class FontAwesome_macOSTests: XCTestCase {
         let button = NSButton()
         button.font = NSFont.fontAwesomeOfSize(30)
         button.title = String.fontAwesomeIconWithName(.Github)
+        
+        XCTAssertNotNil(button.font)
         XCTAssertEqual(button.title, "\u{f09b}")
+    }
+    
+    func testIconImage() {
+        let image = NSImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: NSColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: NSColor.red)
+        XCTAssertNotNil(image)
+    }
+    
+    func testIconImageFromCode() {
+        let image = NSImage.fontAwesomeIconWithCode("fa-github", textColor: NSColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: NSColor.red)
+        XCTAssertNotNil(image)
     }
 }
