@@ -23,7 +23,7 @@
 // THE SOFTWARE.
 
 import XCTest
-@testable import FontAwesome_macOS
+@testable import FontAwesome
 
 class FontAwesome_macOSTests: XCTestCase {
     
@@ -36,15 +36,15 @@ class FontAwesome_macOSTests: XCTestCase {
     func testLabelText() {
         let label = NSTextField()
         label.font = NSFont.fontAwesomeOfSize(200)
-        label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
-        XCTAssertEqual(label.text, "\u{f09b}")
+        label.stringValue = String.fontAwesomeIconWithName(FontAwesome.Github)
+        XCTAssertEqual(label.stringValue, "\u{f09b}")
     }
     
     func testLabelTextFromCode() {
         let label = NSTextField()
         label.font = NSFont.fontAwesomeOfSize(200)
-        label.text = String.fontAwesomeIconWithCode("fa-github")
-        XCTAssertEqual(label.text, "\u{f09b}")
+        label.stringValue = String.fontAwesomeIconWithCode("fa-github") ?? ""
+        XCTAssertEqual(label.stringValue, "\u{f09b}")
     }
     
     func testButtonTitle() {
